@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100vh;
+}
+.box-container .img-container{
+    width: 60%;
+    height: 100%;
+}
+.box-container .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.login-form {
+    padding: 40px;
+    width: 40%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-form form{
+    width: 100%;
+}
+.imgcontainer img {
+    width: 20%;
+    margin-bottom: 15px;
+}
+.imgcontainer p{
+    font-size: 20px;
+}
+.imgcontainer span{
+    color: #5a7ddb;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+.container i{
+    position: absolute;
+    right: 20px;
+    top: 53%;
+    transform: translate(-50%);
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.login a {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #6e8efb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+a:hover {
+    background: #5a7ddb;
+}
+.psw span a{
+    text-align: right;
+
+}
+.container label {
+    font-weight: bold;
+    display: inline-flex;
+}
+.container label span{
+    display: inline-flex;
+    margin-left: auto;
+}
+input[type="checkbox"], span{
+    margin-bottom: auto;
+}
+.forgot-password {
+    all: unset;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    font-size: 14px;
+    cursor: pointer;
+}
+.forgot-password:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .box-container {
+        flex-flow: column;
+        gap: 20px;
+    }
+    .box-container .login-form ,.box-container .img-container{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .login-form {
+        padding: 15px;
+    }
+}

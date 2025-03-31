@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mangal Srushti | Login </title>
+    <link rel="stylesheet" href="/assets/CSS/style.css">
+    <script src="https://kit.fontawesome.com/cf63c97527.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="login">
+        <div class="box-container">
+            <div class="img-container">
+                <img src="/assets/images/background img.jpg" alt="image">
+            </div>
+            <div class="login-form">
+                <form method="post" onsubmit="return loginUser()">
+                    <div class="imgcontainer">
+                        <img src="/assets/images/logo.png" alt="Avatar" class="avatar">
+                        <p>Welcome to <span>The Mangal Srushti</span></p>
+                    </div>
+                    <div class="container">
+                        <label for="uname">Username</label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label for="psw">Password</label>
+                        <input type="password" id="password"  placeholder="Enter Password" name="psw" required>
+                        <i class="fa-solid fa-eye toggle-password" onclick="togglePassword()"></i>
+                        <a class="login" href="/assets/pages/dashboard.html">Login</a>
+                        <label>
+                            <input type="checkbox" name="remember"> Remember me
+
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

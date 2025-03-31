@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Living | Dashboard</title>
+    <link rel="stylesheet" href="/assets/CSS/dashboard.css">
+    <script src="https://kit.fontawesome.com/cf63c97527.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="dashboard-container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="/assets/pages/dashboard.html" class="active">Dashboard</a>
+                <a href="/assets/pages/notice.html">Notice</a>
+                <a href="#">Register Complaint</a>
+                <a href="/assets/pages/event.html">Events</a>
+                <a href="#">Amenities</a>
+                                
+            </nav>
+        </div>
+
+        <main class="main-container">   
+            <header class="top-bar">
+                <div class="logout">
+                    <a href="/index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                </div>
+                <div class="profile">
+                    <img src="/assets/images/profile.png" alt="profile">
+                    <span>Jay Panchal</span>
+                    <small>ID: 0001</small>
+                </div>
+            </header>
+
+            <section class="dashboard">
+                <h1>DASHBOARD</h1>
+
+                <div class="stats">
+                    <div class="card-blue">
+                        <p>Family members</p>
+                        <h3>5</h3>
+                    </div>
+                    <div class="card">
+                        <p>Wing</p>
+                        <h3>A-1</h3>
+                    </div>
+                    <div class="card">
+                        <p>Building Secretary</p>
+                        <h3>Rakesh Bhai</h3>
+                    </div>
+                </div>
+
+<!-------------------------------------------------------------------------------------Payment History & Maintanance----------------------------------------->
+                <div class="grid">
+                    <div class="payment-history">
+                        <h3>Payment History</h3>   
+                        <table>
+                            <tr>
+                                <th style="color: #000; font-size: 18px;">Payment Date</th>
+                                <th style="color: black; font-size: 18px;">Amount</th>
+                                <th style="color: black; font-size: 18px;">Status</th>
+                            </tr>
+                            <tr>
+                                <th>January 2025</th>
+                                <th>₹ 1000</th>
+                                <th style="color: green;">Paid</th>
+                            </tr>
+                            <tr>
+                                <th>February 2025</th>
+                                <th>₹ 1000</th>
+                                <th style="color: green;">Paid</th>
+                            </tr>
+                            <tr>
+                                <th>March 2025</th>
+                                <th>₹ 1000</th>
+                                <th style="color: rgb(193, 34, 34);">Pending</th>
+                            </tr>
+                        </table>
+                        <button class="btn">Pay Now</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+ </div>
+</body>
+</html>
