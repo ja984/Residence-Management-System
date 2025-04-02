@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holi Event | TSM</title>
+    <link rel="stylesheet" href="/assets/CSS/gallery-1.css">
+    <script src="https://kit.fontawesome.com/cf63c97527.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-item" data-index="1"><img src="../images/Events/Diwali/cover.jpg" alt="cover-img"></div>
+        <div class="gallery-item" data-index="2"><img src="../images/Events/Diwali/img-1.jpg" alt="img-1"></div>
+        <div class="gallery-item" data-index="3"><img src="../images/Events/Diwali/img-2.jpg" alt="img-2"></div>
+        <div class="gallery-item" data-index="4"><img src="../images/Events/Diwali/img-3.webp" alt="img-3"></div>
+    </div>
+    
+    <div class="lightbox" id="lightbox">
+        <span class="fa-solid fa-arrow-left lightbox-prev" id="prev"></span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+        <span class="fa-solid fa-arrow-right lightbox-next" id="next"></span>
+    </div>
+    
+    <script>
+        const galleryItems = document.querySelectorAll(".gallery-item img");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const prevBtn = document.getElementById("prev");
+        const nextBtn = document.getElementById("next");
+        let index = 0;
+
+        function openLightbox(event) {
+            lightbox.style.display = "flex";
+            index = Array.from(galleryItems).indexOf(event.target);
+            showImage(index);
+        }
+
+        function showImage(i) {
+            if (i >= galleryItems.length) index = 0;
+            if (i < 0) index = galleryItems.length - 1;
+            lightboxImg.src = galleryItems[index].src;
+        }
+
+        function closeLightbox(event) {
+            if (event.target === lightbox) {
+                lightbox.style.display = "none";
+            }
+        }
+
+        function prevImage() { showImage(--index); }
+        function nextImage() { showImage(++index); }
+
+        galleryItems.forEach(item => item.addEventListener("click", openLightbox));
+        lightbox.addEventListener("click", closeLightbox);
+        prevBtn.addEventListener("click", prevImage);
+        nextBtn.addEventListener("click", nextImage);
+    </script>
+</body>
+</html>

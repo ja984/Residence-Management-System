@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aminities | TMS</title>
+    <link rel="stylesheet" href="/assets/CSS/aminities.css">
+    <script src="https://kit.fontawesome.com/cf63c97527.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="aminities-container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="/assets/pages/dashboard.html">Dashboard</a>
+                <a href="/assets/pages/notice.html">Notice</a>
+                <a href="/assets/pages/register-complaint.html">Register Complaint</a>
+                <a href="/assets/pages/event.html">Events</a>
+                <a href="/assets/pages/aminities.html" class="active">Amenities</a>
+                                
+            </nav>
+        </div>
+
+        <main class="main-container">   
+            <header class="top-bar">
+                <div class="logout">
+                    <a href="/index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                </div>
+                <div class="profile">
+                    <img src="/assets/images/profile.png" alt="profile">
+                    <span>Jay Panchal</span>
+                    <small>ID: 0001</small>
+                </div>
+            </header>
+
+            <section>
+                <h1>Aminities</h1>
+
+                <div class="booking-form">
+                    <h2>Amenities Booking</h2>
+            
+                    <form id="bookingForm">
+                        <!-- Activity Selection -->
+                        <div class="form-group">
+                            <label for="activity" style="font-weight: 60;">Select Activity:</label>
+                            <select id="activity" required>
+                                <option value="">-- Choose an Option --</option>
+                                <option value="box-cricket">Box Cricket</option>
+                                <option value="swimming-pool">Swimming Pool</option>
+                                <option value="community-hall">Community Hall</option>
+                                <option value="banquate">Banquate</option>
+                            </select>
+                        </div>
+            
+                        <!-- No. of Persons Selection -->
+                        <div class="form-group">
+                            <label for="persons" style="font-weight: 60;">Number of Persons:</label>
+                            <select id="persons" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+            
+                        <!-- Date Selection (Within a week) -->
+                        <div class="form-group">
+                            <label for="date" style="font-weight: 60;">Select Date:</label>
+                            <input type="date" id="date" required>
+                        </div>
+            
+                        <!-- Time Slot Selection -->
+                        <div class="form-group">
+                            <label for="time-slot" style="font-weight: 60;">Choose Time Slot:</label>
+                            <select id="time-slot" required>
+                                <option value="">-- Choose a Time Slot --</option>
+                                <option value="9am-11am">9:00 AM - 11:00 AM</option>
+                                <option value="11am-1pm">11:00 AM - 1:00 PM</option>
+                                <option value="3pm-5pm">3:00 PM - 5:00 PM</option>
+                                <option value="5pm-7pm">5:00 PM - 7:00 PM</option>
+                            </select>
+                        </div>
+            
+                        <!-- Submit Button -->
+                        <button type="submit">Book Now</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

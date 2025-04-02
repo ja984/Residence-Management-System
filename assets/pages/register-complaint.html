@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register complaint | TMS</title>
+    <link rel="stylesheet" href="../CSS/register-complaint.css">
+    <script src="https://kit.fontawesome.com/cf63c97527.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="complaint-container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="/assets/pages/dashboard.html">Dashboard</a>
+                <a href="/assets/pages/notice.html">Notice</a>
+                <a href="/assets/pages/register-complaint.html" class="active">Register Complaint</a>
+                <a href="/assets/pages/event.html">Events</a>
+                <a href="/assets/pages/aminities.html">Amenities</a>
+                                
+            </nav>
+        </div>
+<!-----------------------------------------------------------------------------------------------------------------Topbar Section----------------------------->
+        <main class="main-container">   
+            <header class="top-bar">
+                <div class="logout">
+                    <a href="/index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                </div>
+                <div class="profile">
+                    <img src="/assets/images/profile.png" alt="profile">
+                    <span>Jay Panchal</span>
+                    <small>ID: 0001</small>
+                </div>
+            </header>
+<!------------------------------------------------------------------------------------------------------------------Complaint Box-------------------------------->
+            <section>
+                <h1>COMPLAINT</h1>
+
+                <div class="container">
+                    <!-- Complaint Register Form -->
+                    <div class="complaint-form">
+                        <h2>Complaint Register</h2>
+                        <form id="complaintForm">
+                            <label for="complaintType">Select Complaint Type:</label>
+                            <select id="complaintType" required>
+                                <option value="">-- Choose an Option --</option>
+                                <option value="maintenance">Maintenance</option>
+                                <option value="drainage-system">Drainage System</option>
+                                <option value="garden-area">Garden Area</option>
+                                <option value="amenities">Amenities</option>
+                            </select>
+                
+                            <label for="complaintDate">Select Date:</label>
+                            <input type="date" id="complaintDate" required>
+                
+                            <label for="message">Write Your Complaint:</label>
+                            <textarea id="message" rows="4" placeholder="Describe your issue..." required></textarea>
+                
+                            <button type="submit">Submit Complaint</button>
+                        </form>
+                    </div>
+                
+                    <!-- Complaint History -->
+                    <div class="complaint-history">
+                        <h2>Complaint History</h2>
+                        <div class="table-container">
+                        <table class="complaint-table">
+                            <tr>
+                                <th>Date</th>
+                                <th>Complaint Type</th>
+                                <th>Status</th>
+                                <th>Complaint</th>
+                            </tr>
+                            <tr>
+                                <td>01-04-2025</td>
+                                <td>Management</td>
+                                <td style="color: red;">Pending</td>
+                                <td>Watchman are not noting details of outsider visiting the Society.</td>
+                            </tr>
+                            <tr>
+                                <td>25-03-2025</td>
+                                <td>Amenities</td>
+                                <td style="color: green;">Resolved</td>
+                                <td>Gardens are not Cleaned since last two weeks</td>
+                            </tr>
+                            <tr>
+                                <td>02-04-2025</td>
+                                <td>Maintanace</td>
+                                <td style="color: green;">Resolved</td>
+                                <td>Improper water supply in A-1 201.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+</html>
