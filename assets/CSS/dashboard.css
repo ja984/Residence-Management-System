@@ -182,25 +182,3 @@ button:hover{
     background: #45A9EA;
     color: #fff;
 }
-/* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .payment-history table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    .pay-now-btn {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-    }
-}

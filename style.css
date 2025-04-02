@@ -91,31 +91,12 @@ a:hover {
 }
 .container label {
     font-weight: bold;
-    display: inline-flex;
 }
 .container label span{
     display: inline-flex;
     margin-left: auto;
 }
-input[type="checkbox"], span{
-    margin-bottom: auto;
-}
-.forgot-password {
-    all: unset;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: inline;
-    font-size: 14px;
-    cursor: pointer;
-}
-.forgot-password:hover{
-    text-decoration: underline;
-}
+
 
 @media (max-width: 1024px) {
     .box-container {
